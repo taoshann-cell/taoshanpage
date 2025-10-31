@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>비건 도리락 — 캐주얼 비건 푸드 데모</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="20-30대 MZ세대 타깃의 캐주얼하고 가벼운 비건 푸드 브랜드 데모 페이지입니다. 데모 이미지는 그래픽 플레이스홀더로 처리되었습니다.">
+  <style>
+    :root{
+      --bg:#f8fcf7; --card:#ffffff; --accent:#7bd389; --muted:#64707a; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --maxw:1100px; font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f8fcf7 0%, #eef9f0 100%);color:#123;display:flex;justify-content:center;padding:28px}
+    .wrap{width:100%;max-width:var(--maxw);}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px;border-radius:12px;margin-bottom:20px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.4));box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4fb07a);display:grid;place-items:center;color:white;font-weight:800;font-size:20px}
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav{display:flex;gap:10px;align-items:center}
+    .btn{padding:8px 12px;border-radius:10px;background:var(--card);border:0;cursor:pointer;font-weight:600;box-shadow:0 6px 12px rgba(16,24,32,0.06)}
+    .cta{background:var(--accent);color:white}
+
+    .hero{display:flex;gap:20px;align-items:center;padding:26px;border-radius:12px;margin-bottom:18px;background:linear-gradient(90deg,rgba(123,211,137,0.12),rgba(123,211,137,0.04));}
+    .hero-left{flex:1}
+    .hero h2{margin:0 0 8px 0;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .search{margin-top:14px;display:flex;gap:8px}
+    .search input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #e6f1ea;background:white}
+
+    .hero-right{width:220px;height:160px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#ffffff,rgba(255,255,255,0.85));box-shadow:0 8px 20px rgba(12,18,20,0.06)}
+
+    /* products */
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 12px rgba(17,24,39,0.04);display:flex;flex-direction:column;gap:10px}
+    .thumb{height:140px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(180deg,#eefaf0,#ffffff);overflow:hidden}
+    .thumb svg{max-width:90%;max-height:90%}
+    .meta{display:flex;justify-content:space-between;align-items:center}
+    .meta h3{margin:0;font-size:16px}
+    .muted{font-size:12px;color:var(--muted)}
+    .price{font-weight:800}
+    .tag{font-size:11px;padding:6px 8px;background:rgba(123,211,137,0.12);border-radius:999px;color:#2c6b3e}
+    .actions{display:flex;gap:8px}
+
+    footer{margin-top:22px;padding:18px;border-radius:12px;background:var(--glass);text-align:center;color:var(--muted);font-size:13px}
+
+    /* mini responsive tweaks */
+    @media (max-width:640px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-right{width:100%;height:140px}
+      header{flex-direction:column;align-items:flex-start;gap:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">도리</div>
+        <div>
+          <h1>비건 도리락</h1>
+          <p>캐주얼 &middot; 가벼운 비건 스낵 — for MZ</p>
+        </div>
+      </div>
+
+      <nav>
+        <button class="btn">메뉴</button>
+        <button class="btn">스토리</button>
+        <button class="btn cta">구독하기</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>가볍게, 맛있게. 비건 도리락</h2>
+        <p>20~30대 MZ세대를 위한 캐주얼 비건 스낵 브랜드. 어디서든 간편하게 즐길 수 있는 건강한 한 끼 대체 스낵을 만나보세요.</p>
+
+        <div class="search">
+          <input type="search" placeholder="제품 검색 — 예: 김치 토스트, 비건 샌드" aria-label="제품 검색">
+          <button class="btn cta">검색</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- 데모 이미지: 그래픽 플레이스홀더 -->
+        <svg width="180" height="120" viewBox="0 0 180 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="데모 이미지">
+          <rect x="0" y="0" width="180" height="120" rx="12" fill="#fff"/>
+          <g transform="translate(12,12)">
+            <circle cx="30" cy="30" r="22" fill="#f0fff4" stroke="#cceeeb"/>
+            <path d="M60 18c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z" fill="#fff7f0" stroke="#ffe6d1"/>
+            <text x="8" y="90" font-size="12" fill="#8aa49a">Demo Image • 비건 도리락</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <main>
+      <h3 style="margin:0 0 12px 6px">인기 제품</h3>
+      <div class="grid">
+
+        <!-- 카드 1 -->
+        <article class="card">
+          <div class="thumb" aria-hidden>
+            <!-- SVG 데모 썸네일 -->
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="140" rx="10" fill="#fff" />
+              <g transform="translate(14,20)">
+                <rect x="0" y="0" width="90" height="90" rx="12" fill="#f6fff8" stroke="#e7f7ec" />
+                <text x="6" y="54" font-size="14" fill="#7bbf92">김치 토스트</text>
+              </g>
+            </svg>
+          </div>
+          <div class="meta">
+            <h3>김치 토스트</h3>
+            <span class="tag">비건 인증</span>
+          </div>
+          <p class="muted">매콤한 비건 김치와 촉촉한 브레드의 조화</p>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="price">₩5,500</div>
+            <div class="actions">
+              <button class="btn">장바구니</button>
+              <button class="btn cta">바로구매</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 카드 2 -->
+        <article class="card">
+          <div class="thumb" aria-hidden>
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="140" rx="10" fill="#fff" />
+              <g transform="translate(14,20)">
+                <rect x="0" y="0" width="90" height="90" rx="12" fill="#fff8f0" stroke="#fff1e8" />
+                <text x="6" y="54" font-size="14" fill="#f2a06b">비건 버거</text>
+              </g>
+            </svg>
+          </div>
+          <div class="meta">
+            <h3>비건 버거</h3>
+            <span class="tag">가볍게 한끼</span>
+          </div>
+          <p class="muted">식물성 패티와 신선한 야채로 만든 캐주얼 버거</p>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="price">₩7,900</div>
+            <div class="actions">
+              <button class="btn">장바구니</button>
+              <button class="btn cta">바로구매</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 카드 3 -->
+        <article class="card">
+          <div class="thumb" aria-hidden>
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="140" rx="10" fill="#fff" />
+              <g transform="translate(14,20)">
+                <rect x="0" y="0" width="90" height="90" rx="12" fill="#f3f8ff" stroke="#e8f0ff" />
+                <text x="6" y="54" font-size="14" fill="#7e9be8">오트 스무디</text>
+              </g>
+            </svg>
+          </div>
+          <div class="meta">
+            <h3>오트 스무디</h3>
+            <span class="tag">테이크아웃</span>
+          </div>
+          <p class="muted">한 잔으로 든든한 비건 오트 기반 스무디</p>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="price">₩4,200</div>
+            <div class="actions">
+              <button class="btn">장바구니</button>
+              <button class="btn cta">바로구매</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 카드 4 - 예시로 더 추가 -->
+        <article class="card">
+          <div class="thumb" aria-hidden>
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="140" rx="10" fill="#fff" />
+              <g transform="translate(14,20)">
+                <rect x="0" y="0" width="90" height="90" rx="12" fill="#fff9f6" stroke="#fff2ec" />
+                <text x="6" y="54" font-size="14" fill="#f7c9a6">비건 스낵팩</text>
+              </g>
+            </svg>
+          </div>
+          <div class="meta">
+            <h3>스낵팩</h3>
+            <span class="tag">간편 포장</span>
+          </div>
+          <p class="muted">여행이나 출근길에 딱 좋은 큐레이션 스낵팩</p>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="price">₩9,800</div>
+            <div class="actions">
+              <button class="btn">장바구니</button>
+              <button class="btn cta">바로구매</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <footer>
+      © <strong>비건 도리락</strong> — 캐주얼하고 가벼운 비건 라이프스타일. 데모 페이지입니다.
+    </footer>
+
+  </div>
+
+  <script>
+    // 작은 상호작용: 검색 버튼에 간단한 토스트
+    document.querySelectorAll('.btn.cta').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const t = document.createElement('div');
+        t.textContent = '데모 동작: 실제 결제/구매는 지원하지 않습니다.';
+        t.style.position='fixed';t.style.right='18px';t.style.bottom='18px';t.style.padding='10px 14px';t.style.borderRadius='12px';t.style.boxShadow='0 8px 20px rgba(0,0,0,0.12)';t.style.background='white';t.style.fontSize='13px';
+        document.body.appendChild(t);
+        setTimeout(()=>t.remove(),2200);
+      })
+    });
+  </script>
+</body>
+</html>
